@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>合作夥伴 Demo</title>
+<style>
+  body {
+    font-family: sans-serif;
+    padding: 30px;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* 隱藏 radio */
+  input[type="radio"] { display: none; }
+
+  /* 分類選單 */
+  .partner-categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .partner-categories label {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #eee;
+    transition: 0.3s;
+    user-select: none;
+  }
+
+  /* logo 區塊 */
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 100px; /* 固定高度，切換時不跳動 */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .partner-logos .logo-group { display: none; }
+
+  /* 對應 radio 被選中時顯示 logo */
+  #p1:checked ~ .partner-categories ~ .partner-logos .g1,
+  #p2:checked ~ .partner-categories ~ .partner-logos .g2,
+  #p3:checked ~ .partner-categories ~ .partner-logos .g3,
+  #p4:checked ~ .partner-categories ~ .partner-logos .g4,
+  #p5:checked ~ .partner-categories ~ .partner-logos .g5,
+  #p6:checked ~ .partner-categories ~ .partner-logos .g6 {
+    display: flex;
+  }
+
+  /* 選中項目高亮 */
+  #p1:checked ~ .partner-categories li:nth-child(1) label,
+  #p2:checked ~ .partner-categories li:nth-child(2) label,
+  #p3:checked ~ .partner-categories li:nth-child(3) label,
+  #p4:checked ~ .partner-categories li:nth-child(4) label,
+  #p5:checked ~ .partner-categories li:nth-child(5) label,
+  #p6:checked ~ .partner-categories li:nth-child(6) label {
+    background-color: #00aaff;
+    color: white;
+  }
+
+  /* logo 樣式 */
+  .partner-logos img {
+    width: 80px;
+    height: 40px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+  }
+</style>
+</head>
+<body>
+
+<section class="partner-section">
+  <h3>正在使用 inline 的合作夥伴</h3>
+
+  <!-- 隱藏 radio -->
+  <input type="radio" name="partner" id="p1" checked>
+  <input type="radio" name="partner" id="p2">
+  <input type="radio" name="partner" id="p3">
+  <input type="radio" name="partner" id="p4">
+  <input type="radio" name="partner" id="p5">
+  <input type="radio" name="partner" id="p6">
+
+  <!-- 分類選單 -->
+  <ul class="partner-categories">
+    <li><label for="p1">連鎖餐飲集團</label></li>
+    <li><label for="p2">五星級飯店</label></li>
+    <li><label for="p3">百貨賣場</label></li>
+    <li><label for="p4">米其林星級</label></li>
+    <li><label for="p5">特色名店</label></li>
+    <li><label for="p6">海外</label></li>
+  </ul>
+
+  <!-- logo 區塊 -->
+  <div class="partner-logos">
+    <div class="logo-group g1">
+      <img src="https://via.placeholder.com/80x40?text=品牌1" alt="品牌1">
+      <img src="https://via.placeholder.com/80x40?text=品牌2" alt="品牌2">
+      <img src="https://via.placeholder.com/80x40?text=品牌3" alt="品牌3">
+    </div>
+    <div class="logo-group g2">
+      <img src="https://via.placeholder.com/80x40?text=品牌4" alt="品牌4">
+      <img src="https://via.placeholder.com/80x40?text=品牌5" alt="品牌5">
+    </div>
+    <div class="logo-group g3">
+      <img src="https://via.placeholder.com/80x40?text=品牌6" alt="品牌6">
+      <img src="https://via.placeholder.com/80x40?text=品牌7" alt="品牌7">
+    </div>
+    <div class="logo-group g4">
+      <img src="https://via.placeholder.com/80x40?text=品牌8" alt="品牌8">
+      <img src="https://via.placeholder.com/80x40?text=品牌9" alt="品牌9">
+    </div>
+    <div class="logo-group g5">
+      <img src="https://via.placeholder.com/80x40?text=品牌10" alt="品牌10">
+      <img src="https://via.placeholder.com/80x40?text=品牌11" alt="品牌11">
+    </div>
+    <div class="logo-group g6">
+      <img src="https://via.placeholder.com/80x40?text=品牌12" alt="品牌12">
+      <img src="https://via.placeholder.com/80x40?text=品牌13" alt="品牌13">
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -127,5 +127,164 @@ nav{
     font-size: 13px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.intro-area-2{
+    height: 80vh;
+    background-image: url("https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_country.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding-top: 100px;
+}
+
+.intro-area-2 p{
+    flex: 0 1 35%;
+    text-align: center;
+    font-size: 17px;
+    color: #333333;
+    line-height: 2;
+}
+
+.intro-text-area{
+    color: white;
+    /* padding: 0px 0; */
+    line-height: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+
 
 }
+
+.intro-text-area p{
+    font-size: 27px;
+    color: orange;
+}
+
+.intro-text-area h2{
+    font-size: 24px;
+    color: #252932;
+}
+
+.manage-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 20px 200px;
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.manage-section.bg1 {
+    background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background1.png");
+}
+
+.manage-section.bg3 {
+    background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png");
+}
+
+.manage-section.bg2 {
+    background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png");
+}
+
+.manage-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.manage-section-img {
+    width: 45%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+    z-index: 2;
+}
+
+.manage-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.manage-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #064c8c;
+    margin-bottom: 20px;
+}
+
+.manage-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.manage-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #252932;
+}
+
+.manage-text p {
+    font-size: 16px;
+    line-height: 2;
+    color: #252932;
+}
+
+.iconimg {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/*  */
+/* logo區域 */
+/*  */
+
+.text-area{
+    color: white;
+    padding: 30px 0;
+    line-height: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.text-area-p1{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.text-area-p2{
+    color: #252932;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+
+
+
+
+/* footer */
+
+

@@ -1,3 +1,8 @@
+html{
+    /* cursor: pointer; */
+
+}
+
 nav{
     width: 100%;
     height: 80px;
@@ -178,27 +183,31 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 60px;
-    padding: 20px 200px;
+    padding: 0px 200px;
+    margin: 20px 0px;
     position: relative;
-
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 1;
+    /* background: transparent; */
 }
 
 .manage-section.bg1 {
     background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background1.png");
+
 }
 
-.manage-section.bg3 {
+.twosection-bgc {
     background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
 }
 
-.manage-section.bg2 {
-    background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png");
-}
-
-.manage-section.reverse {
+.reverse {
     flex-direction: row-reverse;
 }
 
@@ -250,7 +259,73 @@ nav{
 }
 
 /*  */
-/* logo區域 */
+.partner-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+    /* 隱藏 radio */
+.input[type="radio"] { display: none; }
+    /* 分類選單 */
+.partner-categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    padding: 0 20px 0 20px;
+
+}
+.partner-categories label {
+    padding: 8px 16px;
+    background-color: white;
+    transition: 0.3s;
+    user-select: none;
+    margin-bottom: 40px;
+}
+    /* logo 區塊 */
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 100px; /* 固定高度，切換時不跳動 */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.partner-logos .logo-group { display: none; }
+    /* 對應 radio 被選中時顯示 logo */
+#p1:checked ~ .partner-categories ~ .partner-logos .g1,
+#p2:checked ~ .partner-categories ~ .partner-logos .g2,
+#p3:checked ~ .partner-categories ~ .partner-logos .g3,
+#p4:checked ~ .partner-categories ~ .partner-logos .g4,
+#p5:checked ~ .partner-categories ~ .partner-logos .g5,
+#p6:checked ~ .partner-categories ~ .partner-logos .g6 {
+    display: flex;
+}
+    /* 選中項目高亮 */
+#p1:checked ~ .partner-categories li:nth-child(1) label,
+#p2:checked ~ .partner-categories li:nth-child(2) label,
+#p3:checked ~ .partner-categories li:nth-child(3) label,
+#p4:checked ~ .partner-categories li:nth-child(4) label,
+#p5:checked ~ .partner-categories li:nth-child(5) label,
+#p6:checked ~ .partner-categories li:nth-child(6) label {
+    
+    color: white;
+}
+    /* logo 樣式 */
+.partner-logos img {
+    width: 80px;
+    height: 40px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+}
+
 /*  */
 
 .text-area{

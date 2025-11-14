@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=se, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=se, initial-scale=1.0" />
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <div>
-            <h5>Hi 餐廳老闆</h5>
-            <p>現在申請可享 14 天免費試用＋專人導入教學<br>快讓 inline app 成為您餐廳的最佳助手！<br><strong>此表單為提供餐廳試用系統，消費者訂位、訂餐請 ></strong><a>查詢附近餐廳</a></p>
-            <form action="">
-                <input class="form-input" type="text" id="name" placeholder="e.g. Mayer" required>
-                <input class="form-input" type="tel" id="tel" placeholder="e.g. 8526377XXXX" required>
-                <input class="form-input" type="email" id="email" placeholder="e.g. welcome@inline.app" required>
-                <input class="form-input" type="text" id="restaurant" placeholder="e.g. Mayer" required>
-                <input class="form-input" type="text" id="country" required>
-                <input class="form-input" type="text" id="address" required>
-                <input class="form-input" type="text" id="jobtitle" required>
-                <input class="form-input" type="text" id="used" required>
-                <input class="form-input" type="text" id="interest" required>
-                <input class="form-input" type="text" id="infor" required>
+	<section class="apply-section">
+		<div class="apply-container">
+        		<h5>Hi 餐廳老闆</h5>
+        		<p>現在申請可享 14 天免費試用＋專人導入教學<br />快讓 inline app 成為您餐廳的最佳助手！<br /><strong>此表單為提供餐廳試用系統，消費者訂位、訂餐請 ></strong><a href="#">查詢附近餐廳</a></p>
 
-                <label for="name">
-                    聯絡人姓名（必填）
-                </label>
-                <label for="tel">
-                    手機號碼（必填）
-                </label>
-                <label for="email">
-                    電子信箱（必填）
-                </label>
-                <label for="restaurant">
-                    您的餐廳名稱（必填）
-                </label>
-                <label for="country">
-                    您餐廳的所在國家（必填）
-                </label>
-                <label for="address">
-                    您餐廳的所在地址（必填）
-                </label>
-                <label for="jobtitle">
-                    您的職稱（必填）
-                </label>
-                <label for="used">
-                    是否有使用過其他訂候位管理系統？（必填）
-                </label>
-                <label for="interest">
-                    您對 inline 的哪個功能有興趣？（必填）
-                </label>
-                <label for="infor">
-                    您是從哪裡獲得inline的資訊？（必填）
-                </label>
-            </form>
-        </div>
-    </section>
+        		<form class="apply-form">
+            <!-- 每一格：label + input -->
+            	<div class="form-item">
+                	<label for="name">聯絡人姓名（必填）</label>
+                	<input type="text" id="name" required placeholder="e.g. Mayer" />
+            	</div>
+
+            	<div class="form-item">
+                	<label for="tel">手機號碼（必填）</label>
+                	<input type="tel" id="tel" required placeholder="e.g. 8526377XXXX" />
+            	</div>
+
+            	<div class="form-item">
+               	<label for="email">電子信箱（必填）</label>
+               	<input type="email" id="email" required placeholder="e.g. welcome@inline.app" />
+            	</div>
+
+            	<div class="form-item">
+                	<label for="restaurant">您的餐廳名稱（必填）</label>
+                	<input type="text" id="restaurant" required placeholder="e.g. Mayer" />
+            	</div>
+
+            	<div class="form-item">
+                	<label for="country">您餐廳的所在國家（必填）</label>
+                	<input type="text" id="country" required />
+            	</div>
+
+            	<div class="form-item">
+            	    <label for="address">您餐廳的所在地址（必填）</label>
+            	    <input type="text" id="address" required />
+            	</div>
+
+            	<div class="form-item">
+            	    <label for="jobtitle">您的職稱（必填）</label>
+            	    <input type="text" id="jobtitle" required />
+            	</div>
+
+            	<div class="form-item">
+            	    <label for="used">是否使用過其他管理系統？（必填）</label>
+            	    <input type="text" id="used" required />
+            	</div>
+
+            	<div class="form-item">
+            	    <label for="interest">您對 inline 的哪個功能有興趣？（必填）</label>
+            	    <input type="text" id="interest" required />
+            	</div>
+
+            	<div class="form-item">
+                	<label for="infor">您是從哪裡獲得 inline 的資訊？（必填）</label>
+            	    <input type="text" id="infor" required />
+            	</div>
+        </form>
+    </div>
+</section>
+
 </body>
 </html>

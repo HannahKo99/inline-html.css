@@ -389,10 +389,107 @@ input[type="radio"][name="partner"] {
 
 }
 
+.multisection-bgc {
+    background-image: url("https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+/* 表單區域 */
+/* 整個 section */
+.apply-section {
+    margin-left: 30%;
+    margin-right: 30%;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 35px 10px 0 10px; 
+}
+
+.apply-container{
+    margin-bottom: 20px;
+}
+
+.apply-container h5,
+.apply-container p {
+    text-align: center;
+    line-height: 2.3;
+}
+
+.apply-container h5 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #064c8c;
+}
+
+.apply-container p {
+    font-size: 15px;
+}
+
+/* strong 橘色 */
+.apply-container strong {
+    color: #ff7a00; /* inline 的橘色風格 */
+    font-weight: bold;
+}
+
+.apply-container p a {
+    color: #000080;
+    font-weight: bold;
+}
+
+/* 表單整體設定：四欄 */
+.apply-form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 4 欄 */
+    gap: 20px; /* 每格間距 */
+    margin-top: 20px 20px 0 20px;
+}
+
+/*單一 input 組*/
+.form-item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* 讓 label 在 input 上方 */
+}
+
+/* label 文字靠左 */
+.form-item label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* input 樣式 */
+.form-item input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form-btn{
+    width: 120px;
+    height: 40px;
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    justify-self: center;
+}
+
+.form-bottom-text{
+    font-size: 10px;
+    text-align: center;
+    
+}
 
 
 
-
+/* 表單結束 */
 /* footer */
-
 
